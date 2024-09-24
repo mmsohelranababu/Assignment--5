@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
   <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!-- goggle font cdn -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-   <!-- tailwind and daisy ui -->
-   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-   <script src="https://cdn.tailwindcss.com"></script>
-   <!-- tailwind class configuration -->
-     <script>
-       tailwind.config = {
-         theme: {
-           extend: {
-             colors: {
-               primary : 'rgb(249, 247, 243)',
-               secondary : '#B4F461',
-               lightGray : 'rgba(17, 17, 17, 0.05)',
-             },
-             fontFamily: {
-               lexend : "Lexend",
-             },
-           }
-         }
-       }
-     </script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- goggle font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- tailwind and daisy ui CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind class configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(249, 247, 243)',
+            secondary: '#B4F461',
+            lightGray: 'rgba(17, 17, 17, 0.05)',
+          },
+          fontFamily: {
+            lexend: "Lexend",
+          },
+        }
+      }
+    }
+  </script>
 </head>
+
 <body class="font-lexend">
   <header class="mt-10 sticky top-0 z-50">
     <!-- navbar starts here -->
@@ -48,8 +52,8 @@
             <img src="assets/coin.png" alt="">
             <p class="lg:text-xl font-medium text-slate-500"><span>5500</span>BDT</p>
           </div>
-         </nav>
-       </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="w-11/12 mx-auto z-0">
@@ -63,34 +67,62 @@
       <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-title text-xl font-medium">What is DOM?</div>
           <div class="collapse-content">
-            <p>The DOM (Document Object Model) is a programming interface for web documents, representing the structure of a webpage so it can be manipulated with scripts like JavaScript.</p>
+            <p>It is the programming interface for HTML and XML documents. The DOM (Document Object Model) represents
+              the page as nodes
+              and objects. It helps to connect the programming language to the web page. So that programmers can change
+              document
+              structure, style, and content.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
           <div class="collapse-content">
-            <p>You can select a DOM element using document.getElementById('id') or document.querySelector('selector'). For multiple elements, use document.querySelectorAll('selector').</p>
+            <p>You can select a DOM element using document.getElementById('id') or document.querySelector('selector').
+              For multiple elements, use document.querySelectorAll('selector').</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful</div>
+          <div class="collapse-title text-xl font-medium">What is a Javascript and how JavaScript worked with DOM?</div>
           <div class="collapse-content">
-            <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events on its child elements. It is useful because it improves performance by reducing the number of event listeners and allows handling dynamically added elements.</p>
+            <p>Javascript is a programming language initially developed for the client-side scripting language. But
+              today it is also
+              used as a server-side language. In javascript, programs are called script. It is used to make web pages
+              alive.
+              Javascript allows us to work on DOM (Document Object Model) object and to manipulate them
+              programmatically, the DOM
+              allows us to change, delete, modify, update the part of documents like any HTML element or XML.</p>
           </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">Why is the document called the Object Model?</div>
+            <div class="collapse-content">
+              <p>Document is modeled of object and document in not only the structure of an object but it also includes
+                the behavior of
+                document structure and object that contains the elements like HTML tags and their attributes.</p>
+            </div>
+          </div>
+        </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What are the HTML DOM node tree and how the relationship
+            exists between node, child, and sibling in the node tree?</div>
           <div class="collapse-content">
-            <p>You can manipulate an element's attributes using setAttribute(), getAttribute(), or by directly modifying properties like element.id. To change styles, modify the style property, e.g., element.style.color = 'red'.</p>
+            <p>While preparing HTML documents, HTML DOM views documents as tree-structure, so that tree- structure is
+              called as
+              node-tree. In the node tree, each HTML element is called a node. Each node mostly has its parent nodes or
+              child nodes.
+              All nodes can be accessed through this node tree by different DOM methods. So their contents can be
+              modified or deleted
+              and you can create new elements.</p>
           </div>
         </div>
       </div>
-    </div>
   </main>
-  
+
 </body>
+
 </html>

@@ -6,14 +6,15 @@ function getInputValueById(id){
 }
 
 
-// get the id 
+// get the id of the function
 
 function getInputId(id){
  return document.getElementById(id);
 }
 
 
-// general function
+
+// get the value of input function
 
 function donationHandleByCommonFunction(button,input,initialAmount,sectionName){
   button.addEventListener('click',function(){
@@ -55,37 +56,5 @@ function donationHandleByCommonFunction(button,input,initialAmount,sectionName){
   })
 }
 
-// get all the section
-
-const sections = document.querySelectorAll('.donate-section');
-
-for(const section of sections){
-  const button = section.querySelector('.donate-btn');
-  const input = section.querySelector('.donate-input');
-  const initialAmount = section.querySelector('.initial-amount');
-  const sectionName = section.querySelector('h3').innerText;
-
-  donationHandleByCommonFunction(button,input,initialAmount,sectionName);
-}
 
 
-// button functionality
-
-const documentTab = document.getElementById('donation-btn');
-const historyTab = document.getElementById('history-btn');
-historyTab.addEventListener('click',function(){
-  documentTab.classList.remove('bg-secondary');
-  historyTab.classList.add('bg-secondary');
-
-  document.getElementById('main-content').classList.add('hidden');
-  document.getElementById('history-section').classList.remove('hidden');
-
-})
-
-documentTab.addEventListener('click',function(){
-  documentTab.classList.add('bg-secondary');
-  historyTab.classList.remove('bg-secondary');
-
-  document.getElementById('main-content').classList.remove('hidden');
-  document.getElementById('history-section').classList.add('hidden');
-})
